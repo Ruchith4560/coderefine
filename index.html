@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeRefine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚀 CodeRefine</h1>
+    <p class="subtitle">AI-Powered Multi-Language Code Analyzer</p>
+
+    <div class="editor-section">
+        <textarea id="codeInput" placeholder="Paste your code here..."></textarea>
+
+        <div class="controls">
+            <select id="language">
+                <option value="python">Python</option>
+                <option value="c">C</option>
+                <option value="cpp">C++</option>
+                <option value="java">Java</option>
+            </select>
+
+            <button onclick="analyzeCode()">Analyze Code</button>
+        </div>
+    </div>
+
+    <div id="loader" class="loader hidden">Analyzing...</div>
+
+    <div class="result-section">
+        <div class="card">
+            <h3>🐞 Syntax & Logic Issues</h3>
+            <pre id="bugs"></pre>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Optimization Suggestions</h3>
+            <pre id="performance"></pre>
+        </div>
+
+        <div class="card">
+            <h3>📘 Code Explanation</h3>
+            <pre id="explanation"></pre>
+        </div>
+
+        <div class="card">
+            <h3>💬 Auto-Commented Code</h3>
+            <pre id="commentedCode"></pre>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
